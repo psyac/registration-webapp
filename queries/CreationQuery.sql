@@ -7,11 +7,11 @@
     introMem varchar(255),
     dateTime DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (regID)
-); */
+);  */
 
 
 INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem)
-Values ("John", "Wogan", 24, "M17 6FY", "Donald Glover");
+Values ("Terry", "Wogan", 44, "M12 3PY", "Donald Glover");
 
 
 
