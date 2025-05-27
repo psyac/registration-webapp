@@ -12,6 +12,7 @@ if(isset($_POST['Submit'])){
     $lName = $_POST['lName'];
     $houseNum = $_POST['houseNum'];
     $postcode = inputTest($_POST['postcode']);
+    $postcode = str_replace(' ','', $postcode);
     $inMem = $_POST['inMem'];
 
 
@@ -40,13 +41,13 @@ if(isset($_POST['Submit'])){
 
     }
 
-    $query = "SELECT * FROM Registrations WHERE firstName = '".$fName."' AND lastName = '".$lName."'";
+    $query = "SELECT * FROM Registrations WHERE firstName = '".$fName."' AND lastName = '".$lName."' AND postcode = '".$postcode."' ";
     //echo $query;
     
     $result = $conn->query( $query );
     if($result->num_rows > 3) {
         
-        echo '<script> location.href = "http://localhost/registration-webapp/maxVisit.html"</script>';
+        echo '<script> location.href = "./maxVisit.html"</script>';
 
         /*
         while($row = $result->fetch_assoc()){
@@ -90,7 +91,7 @@ function inputTest($data)
 
     <script>
         window.setTimeout(function() {
-            location.href = "http://localhost/registration-webapp/form.html"
+            location.href = "./form.html"
         }, 4000);
     </script>
 
