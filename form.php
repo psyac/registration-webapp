@@ -40,6 +40,23 @@ if(isset($_POST['Submit'])){
 
     }
 
+    $query = "SELECT * FROM Registrations WHERE firstName = '".$fName."' AND lastName = '".$lName."'";
+    //echo $query;
+    
+    $result = $conn->query( $query );
+    if($result->num_rows > 3) {
+        
+        echo '<script> location.href = "http://localhost/registration-webapp/maxVisit.html"</script>';
+
+        /*
+        while($row = $result->fetch_assoc()){
+            echo "ID: ". $row["regID"] ."Name: " . $row["firstName"] . $row["lastName"] . "<br>";
+        }*/
+    }
+
+    $conn->close();
+
+       
 }
 /*
 else{
@@ -70,4 +87,12 @@ function inputTest($data)
             <h1>We hope you enjoy your time in the club!<br>Please see the barstaff to get a drink</h1>
         </fieldset>
     </body>
+
+    <script>
+        window.setTimeout(function() {
+            location.href = "http://localhost/registration-webapp/form.html"
+        }, 4000);
+    </script>
+
 </html>
+

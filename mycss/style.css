@@ -95,6 +95,19 @@ label {
     margin: 0.5rem 0;
   }
 
+.codeButton {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    color:#f5f6f7;
+    text-align: center;
+    min-width: 300px;
+  }
+
 input[type="submit"] {
     display: block;
     width: 60%;
@@ -106,3 +119,7 @@ input[type="submit"] {
     color:#f5f6f7;
     min-width: 300px;
   }
+
+
+
+  
