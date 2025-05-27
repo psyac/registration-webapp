@@ -13,19 +13,6 @@ if($conn) {
    
 }
 
-/*
-$query = "INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem) 
-Values ('Horatio', 'James', 44, 'M12 3PY', '')";
-
-if($conn->query($query) === TRUE) {
-    echo "NEW RECORD SUCESSFULL <br>";
-}
-else {
-    echo "Error: ". $query . "<br>" . $conn->error;
-}
-    */
-
-
 $query = "SELECT * FROM Registrations";
 $result = mysqli_query($conn, $query);
 if($result->num_rows > 0) {
@@ -38,5 +25,14 @@ else
     echo "zero results";
 }
 $conn->close();
+
+function inputTest($data)
+{
+    $data = trim($data);
+    $data = stripcslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 
 ?>
