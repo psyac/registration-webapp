@@ -9,10 +9,10 @@
     PRIMARY KEY (regID)
 );  */
 
-
+/*
 INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem)
 Values ("Terry", "Wogan", 44, "M12 3PY", "Donald Glover");
-
+*/
 
 
 SELECT * FROM Registrations;

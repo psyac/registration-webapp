@@ -13,6 +13,7 @@ if($conn) {
    
 }
 
+/*
 $query = "INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem) 
 Values ('Horatio', 'James', 44, 'M12 3PY', '')";
 
@@ -22,6 +23,7 @@ if($conn->query($query) === TRUE) {
 else {
     echo "Error: ". $query . "<br>" . $conn->error;
 }
+    */
 
 
 $query = "SELECT * FROM Registrations";

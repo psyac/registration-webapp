@@ -13,11 +13,11 @@
             <h1>Please Sign In</h1>
         <fieldset>
             <h2>* Required Information</h2>
-            <div class="divleft"><Label>First Name* <input id="first-name" type="text"  required></Label></div>
-            <div><Label>Last Name* <input id="last-name" type="text" required></Label></div>
-            <div class="divleft"><Label>House Number* <input id="address" type="text" required></Label></div>
-            <div><Label>Postcode* <input id="postcode" type="text" required></Label></div>
-            <div><Label>Introducing Member <input id="first-name" type="text"></Label></div>
+            <div class="divleft"><Label>First Name* <input id="first-name" name="fName" type="text"  required></Label></div>
+            <div><Label>Last Name* <input id="last-name" name="lName" type="text" required></Label></div>
+            <div class="divleft"><Label>House Number* <input id="houseNum" name="houseNum" type="text" required></Label></div>
+            <div><Label>Postcode* <input id="postcode" name="postcode" type="text" required></Label></div>
+            <div><Label>Introducing Member <input id="introMem" name="inMem" type="text"></Label></div>
             
         </fieldset>
         <fieldset>
@@ -25,9 +25,9 @@
             <p>No responsibility will be accepted by the Club for any loss or damage to my property.</p>
             <p>I agree to abide by the registered rules and bylaws of Ladybarn Social Club as registered with the Financial Conduct Authority under the Co-operative & Community Benefit Societies Act 2014 and The Club’s & Institute Union.</p>
             <p>I agree to the club's rules <input type="checkbox" class="inline" required> <p>
-                <input type="submit" value="Submit">
+                <!-- <input type="submit" name="Submit" value="Submit">-->
         </fieldset>
-        
+        <input type="submit" name="Submit" value="Submit">
     </form>
 
 </body>
