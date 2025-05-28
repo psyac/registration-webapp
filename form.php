@@ -13,10 +13,8 @@ if(isset($_POST['Submit'])){
     $houseNum = $_POST['houseNum'];
     $postcode = inputTest($_POST['postcode']);
     $postcode = strtoupper($postcode);
-    echo $postcode;
     $postcode = str_replace(' ','', $postcode);
     $phone = strval($_POST['phone']);
-    echo $phone;
     $inMem = $_POST['inMem'];
 
 
