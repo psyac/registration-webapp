@@ -1,10 +1,14 @@
-# registration-webapp - version 1.0
+# registration-webapp - version 1.1
 
 ## Overview
 The LSC sign in system was developed for the Ladybarn Social Club to replace the current paper sign in system
 Utilises simple html and php pages to allow the user to fill out a form and store the data in a MySql database
 System allows detection of more than 3 entries for one person which triggers staff intervention as they have violated the rules that they agreed to in the sign in form
 Hosted locally on an apache server via XAMPP and ngrok
+
+## Changes Since Previous Version
+- Now included phone number ont the sign in form - database and php edited to reflect this
+- Extended sanitisation and standardisation on postcode data value so all characters are stored in uppercase
 
 ## Key Contents
 - form.html = Main landing page for the sign in system, houses the main sign in form and redirects to form.php
