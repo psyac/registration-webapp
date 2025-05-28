@@ -12,13 +12,17 @@ if(isset($_POST['Submit'])){
     $lName = $_POST['lName'];
     $houseNum = $_POST['houseNum'];
     $postcode = inputTest($_POST['postcode']);
+    $postcode = strtoupper($postcode);
+    echo $postcode;
     $postcode = str_replace(' ','', $postcode);
+    $phone = strval($_POST['phone']);
+    echo $phone;
     $inMem = $_POST['inMem'];
 
 
     //Fill insert query
-    $query = "INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem) 
-    Values (?, ?, ?, ?, ?)";
+    $query = "INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem, phone) 
+    Values (?, ?, ?, ?, ?, ?)";
 
    $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -29,7 +33,7 @@ if(isset($_POST['Submit'])){
 
 
     $stmt = $conn->prepare($query);
-    $stmt->bind_param("ssiss", $fName, $lName, $houseNum, $postcode, $inMem);
+    $stmt->bind_param("ssisss", $fName, $lName, $houseNum, $postcode, $inMem, $phone);
 
     if($stmt->execute()) {
     /*echo "NEW RECORD SUCESSFULL <br>";*/
