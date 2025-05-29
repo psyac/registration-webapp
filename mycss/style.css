@@ -10,10 +10,10 @@ body{
 
 img {
     display:block;
-    max-width: 40%;
+    max-width: 65%;
     height: auto;
     margin: auto;
-    padding-top: 2em;
+    padding-top: 4em;
     
 }
 
@@ -48,10 +48,18 @@ h1{
     text-align: center;
 }
 
+h2{
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
 
 p {
     margin: 1em auto;
     text-align: center;
+    font-size: 22px;
+
   }
 
 form {
@@ -62,17 +70,20 @@ form {
     padding-bottom: 2em;
   }
 
-  fieldset {
+fieldset {
     border: none;
     padding: 0.5rem 0;
+    width: 100%;
     border-bottom: 3px solid #3b3b4f;
     border-top: 3px solid #3b3b4f;
+    
   }
 
   input{
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
+  padding-bottom: 1em;
 }
 
 .inline {
@@ -93,6 +104,8 @@ fieldset:last-of-type {
 label {
     display: block;
     margin: 0.5rem 0;
+    font-size: x-large;
+    font-weight: bold;
   }
 
 .codeButton {
@@ -108,16 +121,28 @@ label {
     min-width: 300px;
   }
 
+input{
+  width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 8%;
+    height: 0.4rem;
+}
+
 input[type="submit"] {
     display: block;
-    width: 60%;
+    width: 80%;
     margin: 1em auto;
     height: 2em;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
     background-color: #3b3b4f;
     border-color: white;
     color:#f5f6f7;
     min-width: 300px;
+    padding: 0px;
   }
 
 
