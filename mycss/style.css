@@ -123,12 +123,16 @@ label {
 
 input{
   width: 100%;
+  padding: 0px;
+  font-weight: bold;
 }
 
 input[type="checkbox"] {
     width: 8%;
     height: 0.4rem;
 }
+
+
 
 input[type="submit"] {
     display: block;
