@@ -14,7 +14,7 @@
 
 
 /* INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem, phone)
-Values ("Terry", "Wogan", 44, "M12 3PY", "Donald Glover", "07514758411");
+Values ("Terry", "Holmes", 44, "M12 3PY", "Donald Glover", "07514758411");
 */
 
 /*
