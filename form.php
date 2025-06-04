@@ -84,7 +84,7 @@ function inputTest($data)
         <link rel="stylesheet" href="mycss/style.css" type="text/css" />
     </head>
     <body>
-        <fieldset style="padding-top: 10%;">
+        <fieldset style="padding-top: 25%;">
             <img src="logo-inv.png" alt="LSC LOGO">
             <h1>Thank you for signing in</h1>
             <h1>We hope you enjoy your time in the club!<br>Please see the barstaff to get a drink</h1>
