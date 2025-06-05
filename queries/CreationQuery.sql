@@ -19,8 +19,8 @@ Values ("Terry", "Holmes", 44, "M12 3PY", "Donald Glover", "07514758411");
 
 /*
 SET SQL_SAFE_UPDATES = 0;
-DELETE FROM Registrations WHERE lastName = 'Holmes';
+DELETE FROM Registrations;
 SET SQL_SAFE_UPDATES = 0;
-
 */
+
 SELECT * FROM Registrations;
