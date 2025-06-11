@@ -84,6 +84,8 @@ function inputTest($data)
         <link rel="stylesheet" href="mycss/style.css" type="text/css" />
     </head>
     <body>
+        <audio id="success_audio" src="success.mp3"></audio>
+
         <fieldset style="padding-top: 25%;">
             <img src="logo-inv.png" alt="LSC LOGO">
             <h1>Thank you for signing in</h1>
@@ -92,6 +94,10 @@ function inputTest($data)
     </body>
 
     <script>
+        window.onload = function() {
+            document.getElementById("success_audio").play();
+        }
+
         window.setTimeout(function() {
             location.href = "./form.html"
         }, 4000);
