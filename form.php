@@ -43,6 +43,14 @@ if(isset($_POST['Submit'])){
 
     }
 
+    $query = "SELECT * FROM Barred WHERE firstName = '".$fName."' AND lastName = '".$lName."' AND postcode = '".$postcode."' ";
+    
+    $result = $conn->query( $query );
+    if($result->num_rows > 0) {
+        
+        echo '<script> location.href = "./noEntry.html"</script>';
+    }
+
     $query = "SELECT * FROM Registrations WHERE firstName = '".$fName."' AND lastName = '".$lName."' AND postcode = '".$postcode."' ";
     //echo $query;
     

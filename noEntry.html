@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <Title>Assistance Required</Title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mycss/style.css" type="text/css" />
+    </head>
+    <body>
+        <audio id="fail_audio" src="failure.mp3"></audio>
+        <fieldset style="padding-top: 24%;">
+            <img src="logo-inv.png" alt="LSC LOGO">
+            <h1>We will not be able to serve you today</h1>
+            <h1>We ask you to please leave the premises respectfully</h1>
+            <form>
+                <input type="password" id="staffCode" placeholder="Staff Code" name="staffCode">
+                <input type="button" value="Submit" onclick="passCheck()">
+            </form>
+        </fieldset>
+
+        <script>
+
+            window.onload = function() {
+            document.getElementById("fail_audio").play();
+        }
+
+            function passCheck(){
+                var pass = document.getElementById("staffCode").value;
+                if(document.getElementById("staffCode").value == 'staff')
+                {
+                    location.href = "./form.html";
+                }
+                else{
+                    alert("Invalid Code");
+                }
+            }
+        </script>
+
+
+    </body>
+
+    <!--
+    <script>
+        window.setTimeout(function() {
+            location.href = "http://localhost/registration-webapp/form.html"
+        }, 4000);
+    </script>
+    -->
+
+</html>

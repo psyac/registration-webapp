@@ -12,10 +12,24 @@
     PRIMARY KEY (regID)
 );  */
 
+/* CREATE TABLE Barred (
+	regID int NOT NULL AUTO_INCREMENT,
+    firstName varchar(255),
+    lastName varchar(255),
+    houseNum int,
+    postcode varchar(255),
+    PRIMARY KEY (regID)
+);  */
+
 
 /* INSERT INTO Registrations (firstName, lastName, houseNum, postcode, introMem, phone)
 Values ("Terry", "Holmes", 44, "M12 3PY", "Donald Glover", "07514758411");
 */
+
+/*INSERT INTO Barred (firstName, lastName, houseNum, postcode)
+Values ("Leo", "Mckenna", 1, "M14000");
+*/
+
 
 /*
 SET SQL_SAFE_UPDATES = 0;
@@ -24,3 +38,5 @@ SET SQL_SAFE_UPDATES = 0;
 */
 
 SELECT * FROM Registrations;
+
+SELECT * FROM Barred;
