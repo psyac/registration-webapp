@@ -42,9 +42,9 @@ else{
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mycss/style.css" type="text/css" />
     </head>
-    <body>
+    <body onload="passAlert()">
         <fieldset style="padding-top: 18%;">
-            <table>
+            <table id="tab">
                 <tr>
                     <th>Name</th>
                     <th>Postcode</th>
@@ -79,5 +79,26 @@ else{
 
         </fieldset>
     </body>
+
+    <script>
+
+        window.setTimeout(function() {
+            location.href = "./recentVisitors.php"
+        },60000);
+
+        function passAlert(){
+
+            document.getElementById("tab").style.color = "#1b1b32";
+            let password = prompt("Please enter staff code");
+            if(password != "staff")
+            {
+            passAlert();
+            }
+            else{
+                document.getElementById("tab").style.color = "#f5f6f7";
+            }
+
+        }
+    </script>
 
 </html>
