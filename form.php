@@ -43,7 +43,7 @@ if(isset($_POST['Submit'])){
 
     }
 
-    $query = "SELECT * FROM Barred WHERE firstName = '".$fName."' AND lastName = '".$lName."' AND postcode = '".$postcode."' ";
+    $query = "SELECT * FROM Barred WHERE firstName = '".$fName."' AND lastName = '".$lName."' ";
     
     $result = $conn->query( $query );
     if($result->num_rows > 0) {
