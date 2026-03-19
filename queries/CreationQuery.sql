@@ -27,7 +27,7 @@ Values ("Terry", "Holmes", 44, "M12 3PY", "Donald Glover", "07514758411");
 */
 
 /*INSERT INTO Barred (firstName, lastName, houseNum, postcode)
-Values ("Thomas", "Kirkham", 0, "000000");
+Values ("Leo", "Mckenna", 1, "M14000");
 */
 
 
